@@ -1,0 +1,22 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+
+}
+
+main {
+    min-height: 100%;
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+.img_box {
+  width:150px;
+  height:150px;
+  border-radius:6px;
+}

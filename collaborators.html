@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="Lsp7W2dFBPmyt2S6_XDPfWo8PTXCzr-y3gImJ4WoHBY" />
-    <title>Po-wei Harn's Personal Site</title>
-    <meta name="description" content="Po-wei Harn is currently pursuing his Ph.D. degree with the Department of Computer Science and Software Engineering, Auburn University, Auburn, AL, USA.">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/layout.css">
-</head>
-<body>
-<header class="w3-container w3-2021-inkwell">
-        <p class="w3-center">
-            <span>
-                <a href="index.html">Home</a> |
-                <a href="/static/Powei_phd_CV.pdf">CV</a> |
-                <a href="lab.html">EAI Lab</a> |
-                <a href="publications.html">Publications</a> |
-                <!--<a href="https://auburn.edu/academic/engineering/dslab/">Data Science and Engineering Lab</a> |
-                <a href="https://wasn.csie.ncu.edu.tw/">NCU WASN Lab</a> |-->
-                <a href="collaborators.html">Collaborators</a> |
-                <a href="services.html">Services</a>
-            </span>
-        </p>
-</header>
-
-<main>
-
+{% block content %}
 
 <div class="w3-container">
         <div class="w3-container w3-margin-bottom">
@@ -39,7 +10,7 @@
                         <h2>Advisors</h2>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/ku-wei-shinn.jpg">
+                                <img class="w3-image img_box" src="{% static 'ku-wei-shinn.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px"><a href="https://www.eng.auburn.edu/~weishinn/" target="_blank">Wei-Shinn (Jeff) Ku</a></h3>
@@ -50,7 +21,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/su-min-de.jpg">
+                                <img class="w3-image img_box" src="{% static 'su-min-de.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px"><a href="https://scholars.ncu.edu.tw/en/persons/min-te-sun" target="_blank">Min-Te Sun</a></h3>
@@ -65,7 +36,7 @@
                         <h2>Collaborators</h2>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/bo_profile.jpg">
+                                <img class="w3-image img_box" src="{% static 'bo_profile.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px"><a href="https://bohui.herokuapp.com/" target="_blank">Bo Hui</a></h3>
@@ -75,7 +46,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/deepthi_profile_picture.jpeg">
+                                <img class="w3-image img_box" src="{% static 'deepthi_profile_picture.jpeg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px"><a href="https://saideepthiseportfolio.godaddysites.com/" target="_blank">Sai Deepthi Yeddula</a></h3>
@@ -89,7 +60,7 @@
                         <br>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/qi-li.jpg">
+                                <img class="w3-image img_box" src="{% static 'qi-li.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px"><a href="" target="_blank">Qi Li</a></h3>
@@ -99,7 +70,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/Libo_profile.jpg">
+                                <img class="w3-image img_box" src="{% static 'Libo_profile.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px"><a href="" target="_blank">Libo Sun</a></h3>
@@ -114,7 +85,7 @@
                         <h2>Past Collaborators & Mentors</h2>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/ji-zhang.jpg">
+                                <img class="w3-image img_box" src="{% static 'ji-zhang.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px"><a href="" target="_blank">Ji Zhang</a></h3>
@@ -123,7 +94,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/wenlu-wang.jpg">
+                                <img class="w3-image img_box" src="{% static 'wenlu-wang.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px"><a href="https://wenlu-w.github.io/" target="_blank">Wenlu Wang</a></h3>
@@ -141,10 +112,8 @@
         </div>
 </div>
 
+{% endblock %}
 
-</main>
-<footer class="w3-container w3-2021-inkwell">
-        <p class="w3-center">&copy; Updated on October 2025, Copyrighted to Po-wei Harn.</p>
-</footer>
-</body>
-</html>
+
+
+

@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="Lsp7W2dFBPmyt2S6_XDPfWo8PTXCzr-y3gImJ4WoHBY" />
-    <title>Po-wei Harn's Personal Site</title>
-    <meta name="description" content="Po-wei Harn is currently pursuing his Ph.D. degree with the Department of Computer Science and Software Engineering, Auburn University, Auburn, AL, USA.">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/layout.css">
-</head>
-<body>
-<header class="w3-container w3-2021-inkwell">
-        <p class="w3-center">
-            <span>
-                <a href="index.html">Home</a> |
-                <a href="/static/Powei_phd_CV.pdf">CV</a> |
-                <a href="lab.html">EAI Lab</a> |
-                <a href="publications.html">Publications</a> |
-                <!--<a href="https://auburn.edu/academic/engineering/dslab/">Data Science and Engineering Lab</a> |
-                <a href="https://wasn.csie.ncu.edu.tw/">NCU WASN Lab</a> |-->
-                <a href="collaborators.html">Collaborators</a> |
-                <a href="services.html">Services</a>
-            </span>
-        </p>
-</header>
-
-<main>
-
+{% block content %}
 <div class="w3-container">
         <div class="w3-container w3-margin-bottom">
             <div class="w3-container w3-margin">
@@ -42,7 +13,7 @@
                         <h2>Second Year MS Students (Fall 2024)</h2>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/113522059.jpg">
+                                <img class="w3-image img_box" src="{% static '113522059.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">陳奕昕</h3>
@@ -53,7 +24,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/113522150.jpg">
+                                <img class="w3-image img_box" src="{% static '113522150.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">陳致宇</h3>
@@ -67,7 +38,7 @@
                         <br>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/113522136.jpg">
+                                <img class="w3-image img_box" src="{% static '113522136.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">詹勳憲</h3>
@@ -78,7 +49,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/113525017.jpg">
+                                <img class="w3-image img_box" src="{% static '113525017.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">李泳睿</h3>
@@ -91,7 +62,7 @@
                         <br>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/113526018.jpg">
+                                <img class="w3-image img_box" src="{% static '113526018.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">江至中</h3>
@@ -107,7 +78,7 @@
                         <h2>First Year MS Students (Fall 2025)</h2>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/114522018.jpg">
+                                <img class="w3-image img_box" src="{% static '114522018.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">李宗仁</h3>
@@ -118,7 +89,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/114522026.jpg">
+                                <img class="w3-image img_box" src="{% static '114522026.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">洪崇祐</h3>
@@ -132,7 +103,7 @@
                         <br>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/114522127.jpg">
+                                <img class="w3-image img_box" src="{% static '114522127.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">盧宸立</h3>
@@ -143,7 +114,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/114522134.png">
+                                <img class="w3-image img_box" src="{% static '114522134.png' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">呂紀緯</h3>
@@ -157,7 +128,7 @@
                         <br>
                         <div class="w3-row">
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/114522128.jpg">
+                                <img class="w3-image img_box" src="{% static '114522128.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">蔡佩樺</h3>
@@ -168,7 +139,7 @@
 
                             </div>
                             <div class="w3-col m2">
-                                <img class="w3-image img_box" src="/static/114522135.jpg">
+                                <img class="w3-image img_box" src="{% static '114522135.jpg' %}">
                             </div>
                             <div class="w3-col m3 w3-container">
                                 <h3 style="margin-top: 6px">王凱德</h3>
@@ -185,10 +156,4 @@
         </div>
 </div>
 
-
-</main>
-<footer class="w3-container w3-2021-inkwell">
-        <p class="w3-center">&copy; Updated on October 2025, Copyrighted to Po-wei Harn.</p>
-</footer>
-</body>
-</html>
+{% endblock %}

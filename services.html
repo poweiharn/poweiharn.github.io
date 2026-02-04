@@ -1,44 +1,35 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="Lsp7W2dFBPmyt2S6_XDPfWo8PTXCzr-y3gImJ4WoHBY" />
-    <title>Po-wei Harn's Personal Site</title>
-    <meta name="description" content="Po-wei Harn is currently pursuing his Ph.D. degree with the Department of Computer Science and Software Engineering, Auburn University, Auburn, AL, USA.">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/layout.css">
-</head>
-<body>
-<header class="w3-container w3-2021-inkwell">
-        <p class="w3-center">
-            <span>
-                <a href="index.html">Home</a> |
-                <a href="/static/Powei_phd_CV.pdf">CV</a> |
-                <a href="lab.html">EAI Lab</a> |
-                <a href="publications.html">Publications</a> |
-                <!--<a href="https://auburn.edu/academic/engineering/dslab/">Data Science and Engineering Lab</a> |
-                <a href="https://wasn.csie.ncu.edu.tw/">NCU WASN Lab</a> |-->
-                <a href="collaborators.html">Collaborators</a> |
-                <a href="services.html">Services</a>
-            </span>
-        </p>
-</header>
-
-<main>
-
+{% block content %}
 <div class="w3-container">
         <div class="w3-container w3-margin-bottom">
             <div class="w3-container w3-margin">
                 <div class="w3-row-padding w3-content" style="max-width:1000px">
-                    <h2>NCU Academic Services</h2>
+                    <h2 id="ncu-academic-service">NCU Academic Services</h2>
+                    [<a href="#ncu-academic-service">NCU Academic Services</a>] [<a href="#ncu-advisor">NCU Advisor</a>] [<a href="#ncu-course">NCU Courses Taught</a>]
                     <div class="w3-container w3-margin">
-                        <h3>2025 Fall Semester (114-1): (Currently Ongoing)</h3>
+                        <h3>2025 Fall Semester (114-2): (Currently Ongoing)</h3>
                         <table class="w3-table">
+                            <tr>
+                                <td width="50">[2026/01/06]</td>
+                                <td>碩士在職專班招生口試委員</td>
+                            </tr>
+                        </table>
+                        <h3>2025 Fall Semester (114-1):</h3>
+                        <table class="w3-table">
+                            <tr>
+                                <td width="50">[2025/11/07]</td>
+                                <td>資電學士班特殊選才口試委員</td>
+                            </tr>
+                            <tr>
+                                <td width="50">[2025/10/23]</td>
+                                <td>115學年度資工AI碩班甄試入學-筆試命題委員</td>
+                            </tr>
+                            <tr>
+                                <td width="50">[2025/10/20]</td>
+                                <td>115研究所甄試入學 資工AI碩士班 線上書面審查</td>
+                            </tr>
                             <tr>
                                 <td width="50">[2025/08/26]</td>
                                 <td>教育部「臺灣大專院校人工智慧學程聯盟」（Taiwan AI College Alliance, TAICA）學分學程 之常規課程審查 委員</td>
@@ -99,9 +90,17 @@
                             </tr>
                         </table>
                     </div>
-                    <h2>NCU Advisor</h2>
+                    <h2 id="ncu-advisor" >NCU Advisor</h2>
+                    [<a href="#ncu-academic-service">NCU Academic Services</a>] [<a href="#ncu-advisor">NCU Advisor</a>] [<a href="#ncu-course">NCU Courses Taught</a>]
                     <div class="w3-container w3-margin">
-                        <h3>2025 Fall Semester (114-1): (Currently Ongoing)</h3>
+                        <h3>2026 Spring Semester (114-2): (Currently Ongoing)</h3>
+                        <ul>
+                          <li>114年度資訊工程學系2A導師</li>
+                          <li>114年度資訊工程學系碩班交換生導師</li>
+                            <li>中大資訊工程學系介紹窗口</li>
+
+                        </ul>
+                        <h3>2025 Fall Semester (114-1):</h3>
                         <ul>
                           <li>114年度資訊工程學系2A導師</li>
                           <li>114年度資訊工程學系碩班交換生導師</li>
@@ -122,9 +121,17 @@
                           <li>113-1學年度 武陵高中科學班-莊淳皓、洪有澤-專題指導教授</li>
                         </ul>
                     </div>
-                    <h2>NCU Courses Taught</h2>
+                    <h2 id="ncu-course">NCU Courses Taught</h2>
+                    [<a href="#ncu-academic-service">NCU Academic Services</a>] [<a href="#ncu-advisor">NCU Advisor</a>] [<a href="#ncu-course">NCU Courses Taught</a>]
                     <div class="w3-container w3-margin">
-                        <h3>2025 Fall Semester (114-1): (Currently Ongoing)</h3>
+                        <h3>2026 Spring Semester (114-2) (Currently Ongoing)</h3>
+                        <ul>
+                          <li>CE8013-*-AI與資訊安全 R&D (AI for Security R&D)</li>
+                            <li>CE3001-*-計算機組織 (Computer Organization)</li>
+                            <li>SC0004-R-服務學習課程(Student Service-Learning)</li>
+                            <li>TC5006-*-TAICA 計畫 114-2 學年度【生成式AI：文字與圖像生成的原理與實務 (Generative AI: Text and Image Synthesis Principles and Practice)】課程的協同教師</li>
+                        </ul>
+                        <h3>2025 Fall Semester (114-1):</h3>
                         <ul>
                           <li>CE5086-*-軟體開發安全(Secure Software Development)</li>
                             <li>CE6001、CE6150、AI6001-*-書報討論(Seminar)</li>
@@ -145,10 +152,4 @@
             </div>
         </div>
 </div>
-
-</main>
-<footer class="w3-container w3-2021-inkwell">
-        <p class="w3-center">&copy; Updated on October 2025, Copyrighted to Po-wei Harn.</p>
-</footer>
-</body>
-</html>
+{% endblock %}

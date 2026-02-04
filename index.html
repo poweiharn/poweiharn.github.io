@@ -1,7 +1,36 @@
-{% extends "base.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html>
 
-{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="Lsp7W2dFBPmyt2S6_XDPfWo8PTXCzr-y3gImJ4WoHBY" />
+    <title>Po-wei Harn's Personal Site</title>
+    <meta name="description" content="Po-wei Harn is currently pursuing his Ph.D. degree with the Department of Computer Science and Software Engineering, Auburn University, Auburn, AL, USA.">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/layout.css">
+</head>
+<body>
+<header class="w3-container w3-2021-inkwell">
+        <p class="w3-center">
+            <span>
+                <a href="index.html">Home</a> |
+                <a href="/static/Powei_phd_CV.pdf">CV</a> |
+                <a href="lab.html">EAI Lab</a> |
+                <a href="publications.html">Publications</a> |
+                <!--<a href="https://auburn.edu/academic/engineering/dslab/">Data Science and Engineering Lab</a> |
+                <a href="https://wasn.csie.ncu.edu.tw/">NCU WASN Lab</a> |-->
+                <a href="collaborators.html">Collaborators</a> |
+                <a href="services.html">Services</a>
+            </span>
+        </p>
+</header>
+
+<main>
+
 
 <div class="w3-container">
         <div class="w3-container w3-margin-bottom">
@@ -10,7 +39,7 @@
                     <div class="w3-container w3-margin">
                         <div class="w3-third">
                             <div class="w3-container">
-                                <img src="{% static 'PLQM2889.JPG' %}" class="w3-image" width="300" height="200">
+                                <img src="/static/PLQM2889.JPG" class="w3-image" width="300" height="200">
                                 <ul class="w3-ul">
                                     <li><i class="fa fa-envelope w3-margin" style="font-size:24px"></i>harnpowei@gmail.com</li>
 
@@ -107,4 +136,10 @@ My research interest is Genetic Programming of Evolutionary Computation, Graph N
             </div>
         </div>
 </div>
-{% endblock %}
+
+</main>
+<footer class="w3-container w3-2021-inkwell">
+        <p class="w3-center">&copy; Updated on February 2026, Copyrighted to Po-wei Harn.</p>
+</footer>
+</body>
+</html>
